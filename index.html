@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FinIKN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="split-screen-container">
+
+        <section class="branding-column">
+            <div class="branding-content">
+                <img src="img/logoIKN.png" alt="Logo da FinIKN" class="logo">
+                <h2>Seu controle financeiro, simples e intuitivo.</h2>
+            </div>
+        </section>
+
+        <section class="form-column">
+            <div class="login-card">
+
+                <header class="card-header">
+                    <h1>Bem Vindo!</h1>
+                </header>
+
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <label for="email">Usuário Ou Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••••" required>
+                    </div>
+
+                    <a href="esqueci-senha.html" class="forgot-password">Esqueceu a Senha?</a>
+                    
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                    <a href="cadastro.html" class="btn btn-secondary">Cadastre-se</a>
+                </form>
+
+                <div class="social-login">
+                    <div class="divider">
+                        <span>Ou entre com</span>
+                    </div>
+                    <div class="social-buttons">
+                        <button class="btn-social">
+                            <img src="icons/google-logo.svg" alt="Entrar com Google">
+                        </button>
+                        <button class="btn-social">
+                            <img src="icons/apple-logo.svg" alt="Entrar com Apple">
+                        </button>
+                    </div>
+                </div>
+
+                <footer class="signup-link">
+                    <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </footer>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
