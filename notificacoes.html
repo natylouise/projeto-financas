@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações - FinIKN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="img/logoIKN.png" alt="FinIKN Logo" class="sidebar-logo">
+                <span class="sidebar-title">FinIKN</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="home.html"><img src="assets/icon-home.svg" alt="" class="nav-icon"> Home</a></li>
+                    <li><a href="notificacoes.html">
+                         <img src="assets/icon-notification.svg" alt="" class="nav-icon"> Notificações
+                    </a></li>
+                    <li><a href="transacoes.html"><img src="assets/icon-transactions.svg" alt="" class="nav-icon"> Transações</a></li>
+                    <li><a href="analise.html"><img src="assets/icon-analysis.svg" alt="" class="nav-icon"> Análise Rápida</a></li>
+                    <li><a href="calendario.html"><img src="assets/icon-calendar.svg" alt="" class="nav-icon"> Calendário</a></li>
+                    <li><a href="pesquisa.html"><img src="assets/icon-search.svg" alt="" class="nav-icon"> Pesquisa</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="perfil.html" class="profile-link"><img src="img/usuarioIKN.png" alt="Avatar do Usuário" class="profile-avatar"><span class="profile-name">Rômulo Francisco</span></a>
+                <a href="index.html" class="logout-link">Sair</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-greeting">
+                    <h1>Notificações</h1>
+                    <p>Fique por dentro de tudo que acontece na sua conta.</p>
+                </div>
+            </header>
+
+            <div class="notifications-list">
+                <div class="notification-group">
+                    <h3>Hoje</h3>
+                    <div class="notification-item">
+                      <!-- <div class="item-icon" style="background-color: #E3F5FF;"><img src="assets/icon-lembrete.svg" alt="Lembrete"></div>--> 
+                        <div class="notification-content">
+                            <p class="item-title">Lembrete</p>
+                            <span class="item-description">Configure um processo automático para pagar sua conta de moradia...</span>
+                        </div>
+                        <span class="notification-time">17:00 - Abril 01</span>
+                    </div>
+                    <div class="notification-item">
+                       <!-- <div class="item-icon" style="background-color: #E6F7FF;"><img src="assets/icon-atualizacao.svg" alt="Atualização"></div>--> 
+                        <div class="notification-content">
+                            <p class="item-title">Nova Atualização</p>
+                            <span class="item-description">Configurações de relatórios automáticos. Configure sua meta de economia...</span>
+                        </div>
+                        <span class="notification-time">13:00 - Abril 01</span>
+                    </div>
+                </div>
+
+                <div class="notification-group">
+                    <h3>Ontem</h3>
+                    <div class="notification-item">
+                    <!--   <div class="item-icon" style="background-color: #F0FFF9;"><img src="assets/icon-transacao.svg" alt="Transação"></div>--> 
+                        <div class="notification-content">
+                            <p class="item-title">Transações</p>
+                            <span class="item-description">Última transação foi registrada. McDonald's (Despesa) -R$80,00</span>
+                        </div>
+                        <span class="notification-time">23:00 - Março 31</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
