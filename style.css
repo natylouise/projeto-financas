@@ -979,3 +979,256 @@ html, body {
     border-radius: 50%;
     margin-right: 10px;
 }
+
+
+/* =============================================== */
+/* ESTILOS DA PÁGINA DE NOTIFICAÇÕES               */
+/* =============================================== */
+
+.notifications-list {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.notification-group {
+    margin-bottom: 30px;
+}
+.notification-group:last-child {
+    margin-bottom: 0;
+}
+
+.notification-group h3 {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EAECEF;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.notification-item:last-child {
+    margin-bottom: 0;
+}
+
+.notification-content {
+    flex-grow: 1;
+}
+
+.notification-content .item-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.notification-time {
+    font-size: 14px;
+    color: #777;
+    margin-left: 20px;
+}
+
+
+/* =============================================== */
+/* ESTILOS FINAIS E CONSOLIDADOS DA PÁGINA DE PERFIL */
+/* =============================================== */
+
+/* Layout principal da página de configurações */
+.settings-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Menu de navegação da página */
+.settings-menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #EAECEF;
+    position: sticky; /* Menu fica fixo na rolagem */
+    top: 30px;
+}
+.settings-menu li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+.settings-menu li a:hover {
+    background-color: #F0FFF9;
+    color: #04BF8A;
+}
+.settings-menu li.active a {
+    background-color: #04BF8A;
+    color: white;
+}
+
+/* Card de conteúdo das configurações */
+.settings-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid #EAECEF;
+    margin-bottom: 30px;
+}
+.settings-card h3 {
+    margin: 0;
+    font-size: 20px;
+    padding: 25px 30px;
+    border-bottom: 1px solid #EAECEF;
+}
+.card-content {
+    padding: 30px;
+}
+
+/* Cabeçalho do Card de Perfil */
+.profile-card-header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    border-bottom: 1px solid #EAECEF;
+}
+.profile-avatar.large {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile-header-info {
+    flex-grow: 1;
+}
+.profile-header-info h3 {
+    padding: 0;
+    border: none;
+    font-size: 18px;
+}
+.profile-header-info p {
+    margin: 0;
+    color: #777;
+}
+
+/* Formulários */
+.form-section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #EAECEF;
+}
+.form-section-title:first-of-type {
+    margin-top: 0;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #EAECEF;
+}
+.form-actions .btn {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Dados Financeiros */
+.account-item, .card-item {
+    display: flex; align-items: center; padding: 15px 0; border-bottom: 1px solid #EAECEF;
+}
+.item-logo { height: 32px; margin-right: 15px; }
+.item-info { flex-grow: 1; }
+.item-info strong { display: block; font-weight: 500; }
+.item-info span { font-size: 14px; color: #777; }
+.item-action { color: #F23B3B; text-decoration: none; font-weight: 500; font-size: 14px; }
+.add-new-button { width: 100%; text-align: center; padding: 15px; margin-top: 15px; border-radius: 8px; border: 2px dashed #D4D4D4; background-color: #F7F8FA; cursor: pointer; font-weight: 500; color: #555; }
+
+/* Preferências */
+.preference-item { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #EAECEF; }
+.preference-item:last-child { border-bottom: none; }
+.preference-text strong { display: block; }
+.preference-text span { font-size: 14px; color: #777; }
+
+/* Link de perfil ativo no menu principal */
+.sidebar-footer .profile-link.active {
+    background-color: #F0FFF9;
+    padding: 8px;
+    margin: -8px;
+    border-radius: 8px;
+}
+
+/* =============================================== */
+/* ESTILOS UNIFICADOS E MELHORADOS PARA FORMULÁRIOS */
+/* =============================================== */
+
+/* Estilos base para todos os campos de input e select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group input[type="search"],
+.form-group input[type="date"],
+.form-group select {
+    /* Aparência e Tamanho */
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #F7F8FA; /* Fundo cinza bem claro */
+    border: 1px solid #EAECEF; /* Borda sutil */
+    border-radius: 12px; /* Bordas mais arredondadas */
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+
+    /* Transição suave para o efeito de foco */
+    transition: all 0.2s ease-in-out;
+    
+    /* Remove a aparência padrão do navegador (especialmente para o select) */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Efeito de Foco (quando o usuário clica no campo) */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="search"]:focus,
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+    outline: none; /* Remove a borda azul padrão do navegador */
+    border-color: #04BF8A; /* Borda fica com a cor principal do site */
+    background-color: #FFFFFF; /* Fundo fica branco */
+    box-shadow: 0 0 0 3px rgba(4, 191, 138, 0.1); /* Efeito de "brilho" sutil */
+}
+
+/* Estilo do texto de placeholder */
+.form-group input::placeholder {
+    color: #A5B4CB; /* Cor mais suave para o texto de ajuda */
+}
+
+/* Seta customizada para os campos de seleção (<select>) */
+.form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23A5B4CB' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px; /* Garante que o texto não fique em cima da seta */
+}

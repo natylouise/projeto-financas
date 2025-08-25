@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil e Configurações - FinIKN</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="img/logoIKN.png" alt="FinIKN Logo" class="sidebar-logo">
+                <span class="sidebar-title">FinIKN</span>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="home.html"><img src="assets/icon-home.svg" alt="" class="nav-icon"> Home</a></li>
+                    <li><a href="notificacoes.html">
+                         <img src="assets/icon-notification.svg" alt="" class="nav-icon"> Notificações
+                    </a></li>
+                    <li><a href="transacoes.html"><img src="assets/icon-transactions.svg" alt="" class="nav-icon"> Transações</a></li>
+                    <li><a href="analise.html"><img src="assets/icon-analysis.svg" alt="" class="nav-icon"> Análise Rápida</a></li>
+                    <li><a href="calendario.html"><img src="assets/icon-calendar.svg" alt="" class="nav-icon"> Calendário</a></li>
+                    <li><a href="pesquisa.html"><img src="assets/icon-search.svg" alt="" class="nav-icon"> Pesquisa</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="perfil.html" class="profile-link active">
+                    <img src="img/usuarioIKN.png" alt="Avatar do Usuário" class="profile-avatar">
+                    <span class="profile-name">Rômulo Francisco</span>
+                </a>
+                <a href="index.html" class="logout-link">Sair</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <div class="header-greeting">
+                    <h1>Perfil e Configurações</h1>
+                    <p>Gerencie suas informações pessoais e de segurança.</p>
+                </div>
+            </header>
+
+            <div class="settings-layout">
+                <nav class="settings-menu">
+                    <ul>
+                        <li class="active"><a href="#perfil">Meu Perfil</a></li>
+                        <li><a href="#seguranca">Segurança</a></li>
+                        <li><a href="#financeiro">Dados Financeiros</a></li>
+                        <li><a href="#preferencias">Preferências</a></li>
+                    </ul>
+                </nav>
+
+                <div class="settings-content">
+                    <section id="perfil" class="settings-card">
+                        <div class="profile-card-header">
+                            <img src="img/usuarioIKN.png" alt="Avatar do Usuário" class="profile-avatar large">
+                            <div class="profile-header-info">
+                                <h3>Suas Informações</h3>
+                                <p>Atualize sua foto e detalhes pessoais aqui.</p>
+                            </div>
+                        </div>
+                        <form class="card-content">
+                            <div class="form-section-title">Dados Pessoais</div>
+                            <div class="form-grid">
+                                <div class="form-group"><label for="fullname">Nome Completo</label><input type="text" id="fullname" value="Rômulo Francisco de Souza Maia"></div>
+                                <div class="form-group"><label for="birthdate">Data de Nascimento</label><input type="text" id="birthdate" placeholder="DD/MM/AAAA"></div>
+                                <div class="form-group"><label for="gender">Gênero</label><select id="gender"><option>Prefiro não informar</option><option>Masculino</option><option>Feminino</option></select></div>
+                                <div class="form-group"><label for="cpf">CPF</label><input type="text" id="cpf" placeholder="000.000.000-00"></div>
+                                <div class="form-group"><label for="nationality">Nacionalidade</label><input type="text" id="nationality" placeholder="Ex: Brasileiro(a)"></div>
+                            </div>
+                            <div class="form-section-title">Contato</div>
+                            <div class="form-grid">
+                                <div class="form-group"><label for="email">Endereço de E-mail</label><input type="email" id="email" value="juan.silva@example.com"></div>
+                                <div class="form-group"><label for="phone">Telefone</label><input type="tel" id="phone" placeholder="(11) 9 0000-0000"></div>
+                                <div class="form-group full-width"><label for="address">Endereço</label><input type="text" id="address" placeholder="Rua, número e bairro"></div>
+                                <div class="form-group"><label for="city">Cidade</label><input type="text" id="city" placeholder="Sua cidade"></div>
+                                <div class="form-group"><label for="state">Estado</label><input type="text" id="state" placeholder="Seu estado"></div>
+                                <div class="form-group"><label for="cep">CEP</label><input type="text" id="cep" placeholder="00000-000"></div>
+                            </div>
+                            <div class="form-actions"><button type="button" class="btn btn-secondary">Descartar</button><button type="submit" class="btn btn-primary">Salvar Alterações</button></div>
+                        </form>
+                    </section>
+
+                    <section id="seguranca" class="settings-card">
+                        <h3>Segurança</h3>
+                        <form class="card-content">
+                            <div class="form-group"><label for="current-password">Senha Atual</label><input type="password" id="current-password" placeholder="••••••••••"></div>
+                            <div class="form-group"><label for="new-password">Nova Senha</label><input type="password" id="new-password" placeholder="Mínimo 8 caracteres"></div>
+                            <div class="form-group"><label for="confirm-new-password">Confirme a Nova Senha</label><input type="password" id="confirm-new-password" placeholder="Repita a nova senha"></div>
+                            <div class="form-actions"><button type="submit" class="btn btn-primary">Alterar Senha</button></div>
+                        </form>
+                    </section>
+
+                    <section id="financeiro" class="settings-card">
+                        <h3>Dados Financeiros</h3>
+                        <div class="card-content">
+                            <div class="form-section-title">Contas Bancárias</div>
+                            <div class="linked-accounts-list"><div class="account-item"><img src="assets/banco-logo.png" alt="Logo do Banco" class="item-logo"><div class="item-info"><strong>Banco Fictício</strong><span>Conta Corrente: •••• 1234</span></div><a href="#" class="item-action">Remover</a></div></div>
+                            <button class="add-new-button">+ Adicionar Nova Conta</button>
+                            <div class="form-section-title">Cartões Cadastrados</div>
+                            <div class="linked-cards-list"><div class="card-item"><img src="assets/visa-logo.png" alt="Logo do Cartão" class="item-logo"><div class="item-info"><strong>Cartão final •••• 5678</strong><span>Válido até 12/28</span></div><a href="#" class="item-action">Remover</a></div></div>
+                            <button class="add-new-button">+ Adicionar Novo Cartão</button>
+                        </div>
+                    </section>
+
+                    <section id="preferencias" class="settings-card">
+                        <h3>Preferências</h3>
+                        <div class="card-content">
+                            <div class="preference-item"><div class="preference-text"><strong>Notificações por E-mail</strong><span>Receba resumos semanais e alertas importantes.</span></div><label class="toggle-switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+                          <!--  <div class="preference-item"><div class="preference-text"><strong>Modo Escuro</strong><span>(Em breve) Alterne para um tema com cores escuras.</span></div><label class="toggle-switch"><input type="checkbox" disabled><span class="slider"></span></label></div>-->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
