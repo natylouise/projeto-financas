@@ -1,6 +1,7 @@
 # Projeto-Financas 
 # FinIKN - Controle Financeiro Pessoal - Uma aplicação web para gerenciamento de finanças pessoais, com um design moderno e responsivo.
 Professor - Rômulo Francisco - Sistema de Informacao e Tecnologias Emergentes 
+Feito por: Isabella Vitória, Natália Louise, Kleber Nunes e Gustavo Graciotti
 
 ---
 
